@@ -6,9 +6,12 @@ This directory contains the standards, conventions, and operating rules that gui
 
 These documents are being developed incrementally through real OTMN work. A placeholder is not an approved standard.
 
-## Planned standards
+### Current standards
 
-- **GIA Standard** - Defines the GitHub Assistant operating model, commands, permissions, workflow, and safety rules.
+- **GIA Standard v1.0** - Defines the GitHub Assistant operating model, commands, permissions, workflow, and safety rules.
+
+### Planned standards
+
 - **Repository Lifecycle Standard** - Defines how OTMN repositories are created, developed, maintained, archived, or retired.
 - **Privacy & Transparency Standard** - Defines expectations for public, private, contributor, and administrative information.
 - **Contribution Standard** - Defines contribution, review, and collaboration expectations.
