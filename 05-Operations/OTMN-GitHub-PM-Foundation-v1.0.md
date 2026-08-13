@@ -37,21 +37,71 @@ Recommended fields:
 - Area
 - Target
 
-## 3. Initial labels
+## 3. Current label taxonomy
 
-Use a deliberately small label set:
+The OTMN label system is intentionally small and is based on demonstrated workflow needs rather than a comprehensive issue-management model.
 
+### OTMN work/classification labels
+
+- `idea` — An idea or possibility worth preserving; no commitment implied.
+- `research` — Work requiring investigation or evaluation before a decision or implementation.
+- `future` — Valid work or idea intentionally deferred; not current active work.
+- `content-gap` — A missing, incomplete, or needed OTMN content/documentation item.
+- `gia` — GIA should execute or process the resulting GitHub work.
+- `process` — The issue concerns an OTMN/GitHub process or workflow.
+- `question` — Further information or clarification is needed.
+- `enhancement` — An improvement to an existing capability or workflow.
+
+### Documentation classification
+
+- `type: documentation` — The issue is primarily documentation/standards work.
+
+Use `type: documentation` as the standard documentation label. The older unprefixed `documentation` label is a duplicate and should be retired after remaining issues using it are migrated.
+
+### GitHub operational labels
+
+These are retained as GitHub issue-management labels rather than part of the OTMN work taxonomy:
+
+- `bug`
+- `duplicate`
+- `invalid`
+- `wontfix`
+- `good first issue`
+- `help wanted`
+
+### Labels not currently adopted
+
+Do not create the following unless actual workflow demonstrates a need:
+
+- `actionable`
+- `idea-review`
+- `decision-needed`
+- `type: foundation`
+- `type: process`
+- `type: project`
 - `priority: critical`
 - `priority: high`
 - `priority: medium`
 - `priority: low`
-- `type: foundation`
-- `type: documentation`
-- `type: process`
-- `type: project`
-- `type: bug`
-- `content-gap`
-- `gia`
+
+`actionable` is specifically not a persistent classification because Active/Defer/Keep/Research/etc. are human triage dispositions rather than issue types.
+
+### Triage dispositions are not labels
+
+These symbols are human triage dispositions and should not be converted into GitHub labels merely to reproduce the vocabulary:
+
+- 🟢 Active
+- 🔵 Keep
+- 🟡 Defer
+- 🟣 Research
+- 🔧 Update
+- 🔗 Merge
+- ✅ Complete
+- ❌ Close
+
+### Taxonomy change rule
+
+New labels should earn their way into existence through demonstrated OTMN workflow needs. Do not create labels merely because a possible future issue, project, or process can be imagined.
 
 ## 4. Issue templates
 
@@ -97,7 +147,7 @@ The initial PM backlog should establish the operating foundation before expandin
 Priority sequence:
 
 1. Finalize GitHub Project configuration.
-2. Establish initial label taxonomy.
+2. Reconcile and maintain the label taxonomy based on demonstrated use.
 3. Establish issue templates.
 4. Establish PR template.
 5. Document and pilot GIA workflow.
