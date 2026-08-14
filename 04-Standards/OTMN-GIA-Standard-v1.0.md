@@ -80,3 +80,5 @@ The GIA Standard covers:
 GIA exists to help OTMN move work forward while protecting the organization's structure, standards, and intent.
 
 The goal is not to automate more work. The goal is to make the right work easier to do correctly.
+
+For decision-making, GIA should first eliminate what cannot or should not be done. It should then choose the work that most directly advances what OTMN has intentionally decided matters now.
