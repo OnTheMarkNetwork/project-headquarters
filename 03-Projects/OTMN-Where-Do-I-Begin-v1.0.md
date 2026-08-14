@@ -61,12 +61,30 @@ The minimum contract is intentionally source-oriented rather than Project-field-
 | Priority | Issue/Project where authoritative | Ranking factor, not sole decision-maker |
 | Execution status | Project if needed | Supplemental execution context |
 
-## 5. Decision Pipeline
+## 5. State / Context Consistency Check
 
-The decision occurs in two broad stages: **eligibility** followed by **ranking**.
+Before evaluating candidates, #38 must check whether relevant declarations about active work are consistent with authoritative work-item state.
+
+The Active Work Queue expresses **intentional active scope**, while GitHub Issues remain authoritative for whether an individual work item is actually open, completed, or otherwise in a particular durable state. The queue must not override authoritative issue state.
+
+If a material discrepancy is detected — for example, the queue lists a completed issue as current work — #38 must:
+
+1. identify the discrepancy;
+2. avoid treating stale queue information as current work-item truth;
+3. exclude completed or otherwise invalid items from executable candidates;
+4. determine the eligible candidate set using authoritative state; and
+5. flag the Active Work Queue for reconciliation when the discrepancy materially affects the recommendation.
+
+A stale queue is therefore a **state-quality signal**, not permission to silently rewrite the queue or invent missing context.
+
+## 6. Decision Pipeline
+
+The decision occurs in two broad stages: **eligibility** followed by **ranking**, with a state/context consistency check first.
 
 ```text
 ALL WORK
+   ↓
+STATE / CONTEXT CONSISTENCY CHECK
    ↓
 ELIGIBILITY GATE
    ↓
@@ -85,7 +103,7 @@ ONE WINNER → START HERE
 TRUE TIE → ASK MARK
 ```
 
-## 6. Eligibility Gate
+## 7. Eligibility Gate
 
 A candidate should be excluded from START HERE consideration when it is:
 
@@ -99,39 +117,39 @@ A candidate should be excluded from START HERE consideration when it is:
 
 Eligibility happens **before ranking**. Important work that is not currently eligible should not outrank eligible work.
 
-## 7. Ranking Hierarchy
+## 8. Ranking Hierarchy
 
 Among eligible candidates, evaluate in this order:
 
-### 7.1 Current-phase alignment
+### 8.1 Current-phase alignment
 
 Does the work advance the phase OTMN is currently in?
 
-### 7.2 Current-objective alignment
+### 8.2 Current-objective alignment
 
 Does it directly advance what OTMN has intentionally decided matters now?
 
 When two otherwise eligible items are comparable, prefer the item that is closest to the current objective and produces the most immediate useful progress toward it.
 
-### 7.3 Enabling / unblocking value
+### 8.3 Enabling / unblocking value
 
 Does completing the item unlock, enable, or materially simplify other valuable work?
 
-### 7.4 Strategic value
+### 8.4 Strategic value
 
 How materially does the work advance OTMN's broader objectives?
 
-### 7.5 Priority / importance
+### 8.5 Priority / importance
 
 How important is the work relative to other eligible candidates?
 
 Priority is a ranking factor, not an automatic START HERE selector.
 
-### 7.6 Readiness / actionability
+### 8.6 Readiness / actionability
 
 Can meaningful progress be made now, with the available information and without inventing missing decisions?
 
-## 8. Tie-Breaking
+## 9. Tie-Breaking
 
 If two candidates remain comparable after the ranking hierarchy:
 
@@ -141,13 +159,13 @@ If two candidates remain comparable after the ranking hierarchy:
 
 The mechanism should never invent a numerical distinction merely to force a winner.
 
-## 9. Human Judgment Boundary
+## 10. Human Judgment Boundary
 
 GIA should recommend, explain, and identify ambiguity. It should not silently resolve decisions that require Mark's judgment.
 
 A genuine tie or an unresolved human decision is an explicit outcome of the mechanism, not a system failure.
 
-## 10. Output Specification
+## 11. Output Specification
 
 A START HERE recommendation should be concise but explainable:
 
@@ -181,7 +199,7 @@ Confidence:
 [Authoritative / Conditional / Human decision required]
 ```
 
-## 11. Relationship to Existing OTMN Layers
+## 12. Relationship to Existing OTMN Layers
 
 ### GitHub Issues
 
@@ -199,7 +217,7 @@ The execution and visualization layer. Project fields may supplement the decisio
 
 The decision layer that interprets the current state and produces the START HERE recommendation.
 
-## 12. Access and Security Boundary
+## 13. Access and Security Boundary
 
 The mechanism follows the GIA Minimum Necessary Access Principle.
 
@@ -207,7 +225,7 @@ GIA should use the minimum authoritative information necessary to perform the de
 
 Therefore, Project visibility or permissions must not be changed merely for convenience. Additional access requires an intentional, evidence-based decision.
 
-## 13. Validation Criteria
+## 14. Validation Criteria
 
 The specification must be tested against real OTMN decisions before implementation is considered complete.
 
@@ -218,21 +236,22 @@ Required tests include:
 3. **Future high-value work:** important but premature work must be excluded from START HERE.
 4. **Genuine tie:** the model must refuse to manufacture a distinction and request human judgment.
 5. **Missing information:** the model must identify a capability/data gap rather than silently guessing.
-6. **Stale queue:** the model must recognize when a written queue no longer matches authoritative GitHub state.
+6. **Stale queue:** the model must recognize when a written queue no longer matches authoritative GitHub state and must flag the queue for reconciliation when the discrepancy materially affects the recommendation.
 
 The design/discovery tests performed during #38 produced the current contract and rules. These tests should be retained as examples when the mechanism is implemented.
 
-## 14. v1.0 Scope Boundary
+## 15. v1.0 Scope Boundary
 
 This specification defines the decision model. It does **not** yet implement automatic scoring, automatic queue rewriting, Project automation, new labels, new databases, or additional access permissions.
 
 The first implementation should remain minimal and explainable.
 
-## 15. Success Criteria
+## 16. Success Criteria
 
 #38 is ready to move from design into implementation when the model can:
 
-- identify eligible work correctly;
+- identify and validate eligible work correctly;
+- detect material inconsistencies between intentional queue state and authoritative work-item state;
 - select the work that most directly advances the current objective;
 - account for enabling/unblocking value;
 - avoid treating raw priority as the sole selector;
