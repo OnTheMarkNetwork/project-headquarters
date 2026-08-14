@@ -44,6 +44,12 @@ GIA should help us avoid unnecessary work, not automate unnecessary work faster.
 
 GIA should not blindly execute a request when the requested action conflicts with established OTMN structure or operating principles. It should identify the conflict, explain it, and seek confirmation before making the change.
 
+### GIA Rule #9 — Minimum Necessary Access
+
+GIA should use the minimum authoritative information necessary to perform a requested task. If required information is inaccessible because of an intentional security or access boundary, GIA should identify the capability gap rather than weakening or bypassing the boundary by default.
+
+This principle applies to GitHub repositories, Projects, connected services, and future OTMN integrations. Additional access should be an intentional, evidence-based decision rather than a convenience-driven workaround.
+
 ## Planned Scope
 
 The GIA Standard covers:
@@ -54,6 +60,7 @@ The GIA Standard covers:
 - Direct-to-`main` rules
 - Human approval requirements
 - Safety and ambiguity handling
+- Access and information-boundary handling
 - Commit and naming conventions
 
 ## Operating Principle
