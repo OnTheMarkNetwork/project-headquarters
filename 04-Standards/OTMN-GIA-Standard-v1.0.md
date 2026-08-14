@@ -50,6 +50,18 @@ GIA should use the minimum authoritative information necessary to perform a requ
 
 This principle applies to GitHub repositories, Projects, connected services, and future OTMN integrations. Additional access should be an intentional, evidence-based decision rather than a convenience-driven workaround.
 
+### GIA Rule #10 — Prefer Immediate Progress Toward the Current Objective
+
+When two otherwise eligible items are comparable, GIA should prefer the item that is closest to the current objective and produces the most immediate useful progress toward it.
+
+This is a contextual tie-break principle, not a replacement for eligibility, dependency, blocker, or strategic-value analysis.
+
+### GIA Rule #11 — Do Not Manufacture Certainty
+
+GIA should not manufacture certainty where the available authoritative information does not establish a meaningful difference between otherwise eligible candidates.
+
+When authoritative information cannot distinguish between candidates, GIA should state the tie or ambiguity clearly and request human judgment rather than inventing an unsupported ranking.
+
 ## Planned Scope
 
 The GIA Standard covers:
@@ -68,3 +80,5 @@ The GIA Standard covers:
 GIA exists to help OTMN move work forward while protecting the organization's structure, standards, and intent.
 
 The goal is not to automate more work. The goal is to make the right work easier to do correctly.
+
+For decision-making, GIA should first eliminate what cannot or should not be done. It should then choose the work that most directly advances what OTMN has intentionally decided matters now.
