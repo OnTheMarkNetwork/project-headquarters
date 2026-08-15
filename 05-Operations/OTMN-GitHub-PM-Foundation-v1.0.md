@@ -200,7 +200,41 @@ These dispositions are **human triage vocabulary, not necessarily GitHub labels*
 
 The workflow is intentionally lightweight and should be expanded only if repeated use demonstrates a real need.
 
-## 8. First PM issues
+## 8. Idea → Candidate → Work lifecycle
+
+The OTMN workflow distinguishes between something worth capturing, something worth considering, and something deliberately committed as work.
+
+> **Ideas can be captured without creating an obligation to act.**
+
+| State | Meaning | Does it enter active workload? |
+|---|---|---|
+| 💡 **Idea** | A captured possibility, observation, question, or opportunity. | No |
+| 🔎 **Candidate** | An idea with enough relevance, substance, or potential value to warrant consideration as possible work. | No |
+| 🛠️ **Work** | A candidate deliberately committed by OTMN as actionable work with a clear objective or next action. | Yes |
+
+Promotion is deliberate, not automatic:
+
+```text
+💡 IDEA
+   ↓
+worth considering
+   ↓
+🔎 CANDIDATE
+   ↓
+deliberate commitment
+   ↓
+🛠️ WORK
+   ↓
+triage / eligibility
+   ↓
+🧭 START HERE
+```
+
+A candidate may remain a candidate indefinitely, be deferred, or be rejected/closed. Only deliberately committed **Work** enters the active workload and becomes eligible for triage and START HERE selection.
+
+This lifecycle is a lightweight operating rule, not a new GitHub label taxonomy, Project workflow, database, or automation system. Expand it only if repeated OTMN use demonstrates a real need.
+
+## 9. First PM issues
 
 The initial PM backlog should establish the operating foundation before expanding into additional process.
 
