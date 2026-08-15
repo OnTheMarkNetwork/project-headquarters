@@ -140,7 +140,67 @@ Default flow:
 
 GIA must not invent repository state, skip required approval, or expand scope without a reason.
 
-## 7. First PM issues
+## 7. Issue triage disposition guide
+
+Issue inventory size should not be confused with active workload.
+
+> **Ideas can be unlimited. Candidates can accumulate. Active work must remain intentionally constrained.**
+
+Use the following human-friendly dispositions when reconciling the OTMN issue inventory:
+
+| Symbol | Disposition | Meaning |
+|---|---|---|
+| 🟢 | **Active** | We are actually working on it now. |
+| 🔵 | **Keep** | Valid inventory item, but not currently active work. |
+| 🟡 | **Defer** | Valid work intentionally postponed for later. |
+| 🟣 | **Research** | Needs investigation before a decision or implementation. |
+| 🔧 | **Update** | The issue remains valid but needs its scope, wording, structure, or acceptance criteria updated. |
+| 🔗 | **Merge** | Duplicate or substantially overlapping work should be consolidated with another issue. |
+| ✅ | **Complete** | The work has already been completed and the issue can be closed as completed. |
+| ❌ | **Close** | The issue is no longer needed, valid, or planned; close without treating it as completed work. |
+
+### Recommended triage flow
+
+```text
+OPEN ISSUE INVENTORY
+        ↓
+    REVIEW ISSUE
+        ↓
+  DOES IT STILL MATTER?
+     /           \
+   NO             YES
+   ↓               ↓
+  ❌            WHAT IS ITS STATE?
+                   ↓
+     ┌─────────────┼─────────────┐
+     ↓             ↓             ↓
+  🟢 Active     🔵 Keep       🟡 Defer
+     ↓             ↓             ↓
+  Work now     Inventory     Future work
+
+Additional dispositions:
+🟣 Research → investigate first
+🔧 Update   → revise issue
+🔗 Merge    → consolidate duplicate/overlap
+✅ Complete → work already done
+❌ Close    → no longer needed
+```
+
+### Triage questions
+
+During recurring reconciliation, ask:
+
+1. What is this issue?
+2. Does it still represent something OTMN needs to preserve?
+3. Is it active work right now?
+4. Does it need research or a decision before action?
+5. Should it be updated, merged, completed, deferred, or closed?
+
+These dispositions are **human triage vocabulary, not necessarily GitHub labels**. Do not create eight new labels merely to reproduce this table. Labels should remain a deliberately small machine-readable taxonomy.
+
+The workflow is intentionally lightweight and should be expanded only if repeated use demonstrates a real need.
+
+## 8. First PM issues
 
 The initial PM backlog should establish the operating foundation before expanding into additional process.
 
