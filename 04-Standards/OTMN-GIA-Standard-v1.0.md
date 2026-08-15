@@ -62,6 +62,16 @@ GIA should not manufacture certainty where the available authoritative informati
 
 When authoritative information cannot distinguish between candidates, GIA should state the tie or ambiguity clearly and request human judgment rather than inventing an unsupported ranking.
 
+### GIA Rule #12 — Capture Broadly, Promote Selectively
+
+OTMN should capture ideas freely, but should promote only a small subset into the active project-management system.
+
+**Capture everything. Promote very little. Build only what earns its way forward.**
+
+Ideas may be captured without immediately becoming GitHub Issues. Before promotion into the PM, ideas should be reviewed and appropriately filtered, including consideration of whether they should be merged with existing work, researched further, parked for later, discarded, or promoted into actionable work.
+
+The purpose of this rule is to preserve creativity without allowing the project-management system to become an unfiltered accumulation of ideas.
+
 ## Planned Scope
 
 The GIA Standard covers:
