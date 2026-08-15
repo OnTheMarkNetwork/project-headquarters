@@ -2,7 +2,7 @@
 
 **Status:** Active  
 **Established:** 2026-08-13  
-**Last reconciled:** 2026-08-14  
+**Last reconciled:** 2026-08-15  
 **Purpose:** Define the intentionally constrained set of work that should receive current OTMN execution attention.
 
 ---
@@ -19,15 +19,17 @@ The queue is a ranked execution sequence, not a second issue tracker. GitHub Iss
 
 ## Current Queue
 
-### 🟢 NOW — Document the proven issue-triage disposition workflow
+### 🟢 NOW — Resolve the open GIA Rule #12 proposal
 
-**Issue #29 — Document OTMN GitHub Issue Triage Disposition Guide**
+**PR #54 — Add GIA Rule #12: Capture Broadly, Promote Selectively**
 
-Purpose: capture the triage vocabulary and lightweight reconciliation flow that has now been demonstrated during real OTMN inventory cleanup.
+Purpose: review and resolve the currently open proposed GIA Rule #12, which formalizes the distinction between broad idea capture and selective promotion into active project management.
 
-**Why now:** The current reconciliation work exposed a concrete need to keep inventory, active work, deferred work, completed work, and future/conditional work clearly distinguished. #29 already defines that vocabulary and provides the smallest durable documentation needed to repeat the workflow without adding unnecessary labels or process.
+**Why now:** PR #54 is the only currently open standards change and is mergeable. It is the remaining active artifact from the recent governance/START HERE work and should be explicitly reviewed rather than being left as an untracked parallel thread.
 
-**Dependency:** None. The workflow has already been demonstrated in practice.
+**Dependency:** Human review/decision on PR #54. No repository or infrastructure dependency is required.
+
+**State:** Open, non-draft, mergeable.
 
 ---
 
@@ -57,19 +59,11 @@ Purpose: verify the effective repository-level permissions of the ChatGPT/GIA Gi
 
 The following remain valid inventory but are not current execution priorities:
 
-- #15 — Do not design the next layer until needed
-- #16 — Do not expand GIA rules prematurely
-- #17 — Different work types need different intake structures
 - #18 — OTMN Versioning Standards
-- #20 — OTMN Core Idea
-- #21 — Add OTMN Core Idea to Manifesto
 - #22 — Google Workspace complementary layer
-- #23 — Idea → Candidate → Work lifecycle
 - #24 — Roadmap Info section
-- #25 — Idea & Work Philosophy in Manifesto
 - #26 — Ideas Can Be Unlimited content
 - #27 — Author / Creator Intake research
-- #28 — Website MVP historical audit archive
 - #30 — Mobile Capture selections
 - #31 — Persona Research
 - #32 — Build The Network Content
@@ -77,6 +71,7 @@ The following remain valid inventory but are not current execution priorities:
 - #37 — Repository Lifecycle Standard
 - #39 — ChatGPT Knowledge Migration & Archive
 - #53 — Nomenclature Idea Discussion
+- #57 — Clean Up OTMN Manifesto Formatting
 
 These items remain in the GitHub inventory without creating a requirement to work on them now.
 
@@ -90,7 +85,8 @@ The following work is now complete and should not remain in the active queue:
 - **#36 — Adopt OTMN Repository Visibility Model v1.0** — approved and completed August 14, 2026.
 - **#19 — Define the OTMN GitHub Organization Access Model** — completed August 14, 2026.
 - **#4 — Determine and configure OTMN GitHub Project PM layer** — completed and validated August 14, 2026.
-- **#38 — OTMN "Where Do I Begin?" v1.0** — v0.1 implementation/proof completed and merged; retained in the queue above for operational use rather than active implementation.
+- **#29 — Document OTMN GitHub Issue Triage Disposition Guide** — completed August 15, 2026; implementation merged via PR #56.
+- **#38 — OTMN "Where Do I Begin?" v1.0** — v0.1 implementation/proof completed and merged; retained above for operational use rather than active implementation.
 
 ---
 
@@ -124,7 +120,9 @@ ISSUE / INVENTORY CLEANUP        ✅ PASS 1 COMPLETE
        ↓
 #38 START HERE v0.1              ✅ PROVEN / MERGED
        ↓
-#29 TRIAGE DISPOSITION GUIDE     ← NOW
+#29 TRIAGE DISPOSITION GUIDE     ✅ COMPLETE / MERGED
+       ↓
+PR #54 GIA RULE #12              ← NOW
        ↓
 CONTINUED START HERE USE         ← NEXT
        ↓
