@@ -19,19 +19,29 @@ The queue is a ranked execution sequence, not a second issue tracker. GitHub Iss
 
 ## Current Queue
 
-### 🟢 NOW — Define the OTMN GitHub Organization Access Model
+### 🟢 NOW — Document the proven issue-triage disposition workflow
 
-**Issue #19 — Define the OTMN GitHub Organization Access Model**
+**Issue #29 — Document OTMN GitHub Issue Triage Disposition Guide**
 
-Purpose: define the operational access layer that accompanies the adopted Repository Visibility Model, including the distinction between human GitHub access and ChatGPT/GIA connected-tool access.
+Purpose: capture the triage vocabulary and lightweight reconciliation flow that has now been demonstrated during real OTMN inventory cleanup.
 
-**Why now:** #9 (public/private information-boundary audit), #36 (Repository Visibility Model adoption), and #4 (PM visualization layer) are complete. #19 is the remaining active governance item in this sequence and is now complete as well in the live issue state; this queue update records the reconciliation point and identifies the next work below.
+**Why now:** The current reconciliation work exposed a concrete need to keep inventory, active work, deferred work, completed work, and future/conditional work clearly distinguished. #29 already defines that vocabulary and provides the smallest durable documentation needed to repeat the workflow without adding unnecessary labels or process.
 
-**Status at reconciliation:** Completed in GitHub on August 14, 2026. The durable access model is recorded in `04-Standards/OTMN-GitHub-Organization-Access-Model-v1.0.md`.
+**Dependency:** None. The workflow has already been demonstrated in practice.
 
 ---
 
-### 🟢 NEXT — Verify private-repository GIA access boundary when the first restricted repository exists
+### 🟢 NEXT — Continue operational use of START HERE
+
+**Issue #38 — OTMN "Where Do I Begin?" v1.0**
+
+Purpose: maintain and exercise the proven START HERE mechanism as part of the OTMN operating rhythm.
+
+**Status:** The v0.1 implementation and proof have been completed and merged. Continued use is operational rather than a new implementation blocker.
+
+---
+
+### 🟢 FOLLOWING — Verify private-repository GIA access boundary when the first restricted repository exists
 
 **Issue #40 — Verify private-repository GIA access boundary when first restricted repository is created**
 
@@ -40,16 +50,6 @@ Purpose: verify the effective repository-level permissions of the ChatGPT/GIA Gi
 **Dependency:** A restricted OTMN repository must exist before this verification can be performed meaningfully.
 
 **Status:** Deferred until the prerequisite real-world condition exists. This is not current execution work while all OTMN organization repositories remain public.
-
----
-
-### 🟢 FOLLOWING — Continue Phase 1 operational use and reconciliation
-
-**Issue #38 — OTMN "Where Do I Begin?" v1.0**
-
-Purpose: maintain and exercise the proven START HERE mechanism as part of the OTMN operating rhythm.
-
-**Status:** The v0.1 implementation and proof have been completed and merged. Continued use is operational rather than a new implementation blocker.
 
 ---
 
@@ -70,13 +70,13 @@ The following remain valid inventory but are not current execution priorities:
 - #26 — Ideas Can Be Unlimited content
 - #27 — Author / Creator Intake research
 - #28 — Website MVP historical audit archive
-- #29 — Issue Triage Disposition Guide
 - #30 — Mobile Capture selections
 - #31 — Persona Research
 - #32 — Build The Network Content
 - #33 — Necessity Article
 - #37 — Repository Lifecycle Standard
 - #39 — ChatGPT Knowledge Migration & Archive
+- #53 — Nomenclature Idea Discussion
 
 These items remain in the GitHub inventory without creating a requirement to work on them now.
 
@@ -90,7 +90,7 @@ The following work is now complete and should not remain in the active queue:
 - **#36 — Adopt OTMN Repository Visibility Model v1.0** — approved and completed August 14, 2026.
 - **#19 — Define the OTMN GitHub Organization Access Model** — completed August 14, 2026.
 - **#4 — Determine and configure OTMN GitHub Project PM layer** — completed and validated August 14, 2026.
-- **#38 — OTMN "Where Do I Begin?" v1.0** — v0.1 implementation/proof completed and merged; retained above for operational use rather than active implementation.
+- **#38 — OTMN "Where Do I Begin?" v1.0** — v0.1 implementation/proof completed and merged; retained in the queue above for operational use rather than active implementation.
 
 ---
 
@@ -118,15 +118,19 @@ ISSUE / INVENTORY CLEANUP        ✅ PASS 1 COMPLETE
        ↓
 #36 VISIBILITY MODEL             ✅ COMPLETE
        ↓
-#19 ACCESS MODEL                ✅ COMPLETE
+#19 ACCESS MODEL                 ✅ COMPLETE
        ↓
-#4  PM / PROJECT VISUALIZATION  ✅ COMPLETE
+#4  PM / PROJECT VISUALIZATION   ✅ COMPLETE
        ↓
 #38 START HERE v0.1              ✅ PROVEN / MERGED
        ↓
+#29 TRIAGE DISPOSITION GUIDE     ← NOW
+       ↓
+CONTINUED START HERE USE         ← NEXT
+       ↓
 #40 PRIVATE-REPO GIA TEST        ⏸ WAITING FOR FIRST PRIVATE REPO
        ↓
-CONTINUED OPERATING USE / PHASE 1 CLOSEOUT
+PHASE 1 CLOSEOUT / NEXT PHASE
 ```
 
 ---
