@@ -9,6 +9,7 @@ These documents are being developed incrementally through real OTMN work. A plac
 ### Current standards
 
 - **GIA Standard v1.0** - Defines the GitHub Assistant operating model, commands, permissions, workflow, and safety rules.
+- **OTMN Operating Principles v1.0** - Defines the demonstrated principles governing how OTMN captures, evaluates, selects, executes, and re-evaluates work.
 - **OTMN Repository Visibility Model v1.0** - Defines the baseline visibility model for public, team, founder, and personal information.
 
 ### Planned standards

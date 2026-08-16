@@ -200,19 +200,24 @@ These dispositions are **human triage vocabulary, not necessarily GitHub labels*
 
 The workflow is intentionally lightweight and should be expanded only if repeated use demonstrates a real need.
 
-## 8. Idea → Candidate → Work lifecycle
+## 8. Idea → Candidate → Work → Active lifecycle
 
-The OTMN workflow distinguishes between something worth capturing, something worth considering, and something deliberately committed as work.
+The OTMN workflow distinguishes between something worth capturing, something worth considering, something deliberately committed as work, and work deliberately selected for current execution attention.
 
 > **Ideas can be captured without creating an obligation to act.**
+
+> **Captured work does not become active work automatically.**
+
+> **Advancement into active work requires deliberate selection.**
 
 | State | Meaning | Does it enter active workload? |
 |---|---|---|
 | 💡 **Idea** | A captured possibility, observation, question, or opportunity. | No |
 | 🔎 **Candidate** | An idea with enough relevance, substance, or potential value to warrant consideration as possible work. | No |
-| 🛠️ **Work** | A candidate deliberately committed by OTMN as actionable work with a clear objective or next action. | Yes |
+| 🛠️ **Work** | A candidate deliberately committed by OTMN as actionable work with a clear objective or next action. | Eligible for selection; not automatically active |
+| 🟢 **Active** | Work deliberately selected to receive current OTMN execution attention. | Yes |
 
-Promotion is deliberate, not automatic:
+Promotion into active work is deliberate, not automatic:
 
 ```text
 💡 IDEA
@@ -225,16 +230,89 @@ deliberate commitment
    ↓
 🛠️ WORK
    ↓
-triage / eligibility
+START HERE / WHAT'S NEXT evaluation
    ↓
-🧭 START HERE
+deliberate selection + authorization
+   ↓
+🟢 ACTIVE WORK
+   ↓
+execution
+   ↓
+reconciliation
 ```
 
-A candidate may remain a candidate indefinitely, be deferred, or be rejected/closed. Only deliberately committed **Work** enters the active workload and becomes eligible for triage and START HERE selection.
+A candidate may remain a candidate indefinitely, be deferred, or be rejected/closed. Work may remain valid without being active. Only deliberately selected **Active Work** enters the current execution workload.
 
 This lifecycle is a lightweight operating rule, not a new GitHub label taxonomy, Project workflow, database, or automation system. Expand it only if repeated OTMN use demonstrates a real need.
 
-## 9. First PM issues
+## 9. Active-Work Authority
+
+### Current authority rule
+
+**Mark has final authority over what becomes active work under the current OTMN operating model.**
+
+GIA/ChatGPT may:
+
+- discover and capture work;
+- analyze the inventory;
+- reconcile stale or outdated items;
+- identify candidates;
+- recommend priorities and sequencing; and
+- maintain resulting artifacts when authorized.
+
+GIA/ChatGPT does not independently promote an item into active work unless Mark explicitly authorizes that selection.
+
+This is the current operating model and is not a permanent limitation on future team, delegated, or agentic-AI governance.
+
+### Active-work definition
+
+Active work is work that OTMN has deliberately selected to receive current execution attention. It has:
+
+- a clear current objective, decision, or next action;
+- deliberate selection from the current inventory/candidate pool;
+- actual current execution attention; and
+- a place in the Active Work Queue.
+
+An issue does not become active merely because it is open, interesting, recently created, technically actionable, or high priority in isolation.
+
+> **Open issues are inventory. Active work is selected workload.**
+
+### Active-work authority chain
+
+The current operating cycle is:
+
+```text
+Capture → Reconcile → Evaluate → Select → Authorize → Queue → Execute → Reconcile again
+```
+
+This is an OTMN operating principle: the organization may capture broadly and learn continuously, but current execution attention is deliberately selected and repeatedly reconciled against what OTMN now knows.
+
+### Authoritative records
+
+Authority is intentionally separated by function:
+
+- **GitHub Issues** are the system of record for individual work items and their acceptance criteria.
+- **`05-Operations/OTMN-Active-Work-Queue-v1.0.md`** is the authoritative current record of which work has been selected for execution attention and its sequence.
+- **This PM Foundation** documents the underlying lifecycle, triage, and authority rules.
+- **START HERE / WHAT'S NEXT** is the recurring decision process used to determine what should receive current attention.
+
+The Active Work Queue is not a second issue tracker. It records current selection and rationale; the individual GitHub issues remain authoritative for the actual work.
+
+### Leaving active work
+
+Active work leaves the active set when:
+
+- **Complete** — the intended work is finished;
+- **Defer / Blocked** — work remains valid but cannot or should not continue now;
+- **Merge / Supersede** — the work is consolidated into another item;
+- **Close** — the work is no longer needed or valid; or
+- **Reassessment** — reconciliation determines that another item deserves the execution slot.
+
+When active status changes, the Active Work Queue should be updated and the GitHub issue should reflect the resulting state/disposition.
+
+> **Active status represents current execution attention, not a permanent classification.**
+
+## 10. First PM issues
 
 The initial PM backlog should establish the operating foundation before expanding into additional process.
 
