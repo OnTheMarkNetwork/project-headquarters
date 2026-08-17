@@ -2,7 +2,7 @@
 
 **Status:** Active  
 **Established:** 2026-08-13  
-**Last reconciled:** 2026-08-15  
+**Last reconciled:** 2026-08-16  
 **Purpose:** Define the intentionally constrained set of work that should receive current OTMN execution attention.
 
 ---
@@ -37,57 +37,67 @@ The queue records the result of that selection/authorization step. It is therefo
 
 ## Current Queue
 
-### 🟢 NOW — Formalize and implement the Active-Work Authority model
+### 🟢 NOW — Follow the Path: OTMN/Gia Operational Workflow Discovery
 
-**Issue #68 — Establish Deliberate Active-Work Selection and Current Authority**
+**Issue #85 — Follow the Path — OTMN/Gia Operational Workflow Discovery**
 
-Purpose: finalize the current definition of active work, the deliberate selection/authorization transition, the current authority model, the authoritative-record relationship, and the rules for leaving active work.
+Purpose: research the emerging end-to-end OTMN/Gia operating workflow from information capture through processing, routing, action, notification, reporting, learning, and renewed capture.
 
-**Why now:** The current OTMN reconciliation process has demonstrated that open inventory and active workload are different things. The authority model is now defined and needs to be reflected consistently in the operating documentation before the next layer of PM/GIA work is finalized.
+**Why now:** The recent #74 measurement test and #86 housekeeping test have provided the first meaningful live evidence that the OTMN operating cycle is functioning as an observable system rather than only as a proposed architecture. #85 is now the best next research target because it can consolidate what has actually been demonstrated without prematurely turning the emerging workflow into a formal architecture.
 
-**Remaining work:** Review and approve the updated operating documentation, then perform the final conflict check against the existing GIA/PM rules.
+**Current research question:** What is the minimum viable end-to-end Gia workflow that OTMN can implement and test?
 
-**State:** Active.
+**Scope:** Research and observe the workflow. Do not build a larger workflow platform or formal architecture unless the evidence demonstrates that a new layer is needed.
+
+**State:** Selected as the current NOW item through the August 16, 2026 reconciliation.
 
 ---
 
-### 🟢 NEXT — Establish the verified Inventory / Active-Work metrics baseline
+### 🟢 NEXT — Guard against meta-process becoming the workload
 
-**Issue #74 — OTMN Inventory / Active-Work Metrics Tracker**
+**Issue #73 — Identify and Prevent OTMN Meta-Process / Self-Referential Workflow Loops**
 
-Purpose: establish a lightweight, verifiable way to distinguish total captured inventory from the intentionally constrained active workload.
+Purpose: determine the smallest safeguards needed to improve OTMN's operating system without allowing process design, reconciliation, and optimization to become the primary workload.
 
-**Why next:** The current reconciliation run demonstrated that raw issue counts are not sufficient. A repeatable verified snapshot method is needed before relying on inventory/active-work metrics for future START HERE / WHAT'S NEXT decisions.
+**Why next:** The #74 and #86 tests now provide concrete evidence for evaluating this risk. OTMN is generating substantial new discovery while keeping active work intentionally constrained. #73 can now evaluate whether the existing active-work authority, reconciliation, and capture/commit principles are already sufficient safeguards before any additional governance is created.
 
-**Dependency:** The Active-Work Authority model in #68 should be approved first so the metric definitions use the finalized meaning of active work.
+**Scope:** Research the observed behavior and identify the minimum useful safeguard, if one is actually needed. Do not create an elaborate governance layer.
 
 **State:** Next.
 
 ---
 
-### 🟢 FOLLOWING — Guard against meta-process becoming the workload
-
-**Issue #73 — Meta-Process / Self-Referential Workflow Loops**
-
-Purpose: determine the smallest safeguards needed to improve OTMN's operating system without allowing process design, reconciliation, and optimization to become the primary workload.
-
-**Why following:** The current work has already provided live evidence for the problem. The finalized authority and verified inventory model should be in place before formalizing additional safeguards.
-
-**State:** Following.
-
----
-
-### 🟢 THEN — Continue GIA identity / scope discovery
+### 🟢 FOLLOWING — Continue GIA identity / scope discovery
 
 **Issue #76 — GIA Identity, Scope, Interface, Intelligence, Automation, Escalation, Voice & Boundaries**
 
 Purpose: determine what GIA actually is within OTMN, what responsibilities it should have, what boundaries it needs, and what interfaces or capabilities are justified by demonstrated use.
 
-**Related discovery family:** #77 (`gia@` interface), #78 (GIDS), #79 (GIA persona/team presence), #80 (emerging GIA principles), and #81 (domain email identity strategy).
+**Why following:** #85 and #73 can now provide additional evidence about GIA's actual operating role and boundaries before the larger identity/scope research is undertaken. The related #77, #78, #79, #80, and #81 discoveries remain useful inputs but do not automatically become active work.
 
-**Why then:** The recent GIA/email discoveries are significant, but the organization should resolve the current active-work authority and measurement model before allowing the GIA discovery family to expand into implementation.
+**State:** Following.
 
-**State:** Then / current discovery candidate.
+---
+
+## Recently Validated / Not Active
+
+### #74 — OTMN Inventory / Active-Work Metrics Tracker
+
+The lightweight measurement method has now been tested against multiple verified GitHub snapshots. The test demonstrated that inventory can change in knowledge/composition while active workload remains deliberately constrained, and that numeric counts are most useful when paired with active identity/state changes and material observations.
+
+**Disposition:** Validated / Observe. No dashboard, spreadsheet, automation, or additional reporting layer is currently justified.
+
+### #86 — Gia Project Housekeeping — Health Check Discovery
+
+The first manual housekeeping review has been performed. Its most useful demonstrated function was identifying drift between GitHub's recorded operating state and the actual current state, particularly the stale Active Work Queue.
+
+**Disposition:** Initial test complete; preserve the finding and do not automate yet.
+
+### #68 — Establish Deliberate Active-Work Selection and Current Authority
+
+Completed through the finalized Active-Work Authority documentation and operating-cycle implementation.
+
+**Disposition:** Completed; no longer active work.
 
 ---
 
@@ -122,6 +132,9 @@ The following remain valid inventory but are not current execution priorities:
 - #79 — GIA Persona / Team Presence
 - #80 — Emerging GIA principles / working concepts
 - #81 — Domain email identity strategy
+- #84 — Founder Talk discovery
+- #87 — Weekly Management & Intelligence Reporting discovery
+- #89 — Sensitive Information / Classification & Access Architecture research
 
 These items remain in the GitHub inventory without creating a requirement to work on them now. Related issues may become active later when their prerequisites are satisfied or when fresh reconciliation deliberately selects them.
 
@@ -129,7 +142,7 @@ These items remain in the GitHub inventory without creating a requirement to wor
 
 ## Completed in the Current Governance Sequence
 
-The following work is now complete and should not remain in the active queue:
+The following work is complete and should not remain in the active queue:
 
 - **#9 — Audit OTMN public vs private GitHub information boundaries** — completed August 14, 2026.
 - **#36 — Adopt OTMN Repository Visibility Model v1.0** — approved and completed August 14, 2026.
@@ -137,6 +150,7 @@ The following work is now complete and should not remain in the active queue:
 - **#4 — Determine and configure OTMN GitHub Project PM layer** — completed and validated August 14, 2026.
 - **#29 — Document OTMN GitHub Issue Triage Disposition Guide** — completed August 15, 2026; implementation merged via PR #56.
 - **#38 — OTMN "Where Do I Begin?" v1.0** — v0.1 implementation/proof completed and merged; retained as an operational mechanism rather than active implementation.
+- **#68 — Establish Deliberate Active-Work Selection and Current Authority** — completed August 16, 2026.
 
 ---
 
@@ -151,6 +165,7 @@ The following work is now complete and should not remain in the active queue:
 7. **GitHub Issues remain authoritative.** This document records the current queue and rationale; it does not duplicate issue acceptance criteria.
 8. **Review the queue after meaningful work sessions.** Completed, blocked, newly discovered, or reprioritized work should cause the queue to be reconsidered.
 9. **Selection is deliberate.** The queue must reflect an explicit active-work decision, not automatic promotion from the issue inventory.
+10. **Validated work does not automatically become a new project layer.** A successful test should first be observed and reconciled before additional tooling, automation, or standards are created.
 
 ---
 
@@ -165,13 +180,19 @@ IDENTIFY REAL ACTIVE CANDIDATES             ✅ COMPLETE
        ↓
 FRESH START HERE / WHAT'S NEXT              ✅ COMPLETE
        ↓
-#68 ACTIVE-WORK AUTHORITY                   ← NOW
+#68 ACTIVE-WORK AUTHORITY                   ✅ COMPLETE
        ↓
-#74 VERIFIED INVENTORY / ACTIVE METRICS     ← NEXT
+#74 INVENTORY / ACTIVE-WORK MEASUREMENT     ✅ VALIDATED / OBSERVE
        ↓
-#73 META-PROCESS SAFEGUARD                  ← FOLLOWING
+#86 FIRST MANUAL HOUSEKEEPING TEST          ✅ COMPLETE / OBSERVE
        ↓
-#76 GIA IDENTITY / SCOPE DISCOVERY          ← THEN
+FRESH ACTIVE-WORK QUEUE RECONCILIATION      ← CURRENT
+       ↓
+#85 FOLLOW THE PATH                         ← NOW
+       ↓
+#73 META-PROCESS SAFEGUARD                  ← NEXT
+       ↓
+#76 GIA IDENTITY / SCOPE DISCOVERY          ← FOLLOWING
        ↓
 RECONCILE AGAIN AFTER MEANINGFUL DISCOVERY
 ```
@@ -189,6 +210,8 @@ At the end of each meaningful work session:
 5. Re-rank the queue if dependencies or priorities changed.
 6. Identify the next **NOW** item through deliberate selection and authorization.
 
+The August 16 reconciliation demonstrates this cycle in practice: #68 completed, #74 validated, #86 tested, the queue was found stale, and the next deliberate selection is #85.
+
 The long-term goal is for this queue to become increasingly system-generated from GitHub state, with human judgment remaining authoritative.
 
 ---
@@ -200,3 +223,5 @@ The long-term goal is for this queue to become increasingly system-generated fro
 > **Open issues are the inventory. Active work is selected workload.**
 
 > **Build the foundation. Prove the workflow. Let the next layer earn its way into existence.**
+
+> **Validated does not mean expanded. Observe before adding the next layer.**
